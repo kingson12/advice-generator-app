@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #202733;
+  font-family: 'poppins', sans-serif;
+}
+
+.container {
+  width: 540px;
+  height: 364px;
+  background: #313a48;
+  color: #fff;
+  border-radius: 10px;
+  margin: 150px auto;
+  box-shadow: 30px 50px 80px #000;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+h4{
+
+    padding-top: 48px;
+    padding-bottom: 28px;
+    color: #53FFAA;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+}
+
+p{
+
+    font-size: 20px;
+    font-weight: 600;
+    color: #CEE3E9;
+    text-align: center;
+    line-height: 38.25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.line{
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+      align-self: center;
+}
+
+.dice{
+
+    position: absolute;
+    bottom: -72px;
+    right: 200px;
+    cursor: pointer;
+  
+}
+
+.diceRolling{
+
+    animation-name: diceRolling;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+@keyframes diceRolling{
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 375px){
+    .container {
+       width: 2500px;
+        height: 100px;
+        position: relative;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+    .line{
+        width: 100px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+          align-self: center;
+    }
+
+    .dice{
+
+        position: absolute;
+        bottom: -72px;
+        right: 200px;
+        cursor: pointer;
+      
+    }
+
+}

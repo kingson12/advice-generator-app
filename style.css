@@ -78,7 +78,7 @@ p{
     }
 }
 
-@media screen and (max-width: 375px){
+/* @media screen and (max-width: 375px){
     .container {
        width: 343px;
         height: 347px;
@@ -104,3 +104,4 @@ p{
     }
 
 }
+ */
